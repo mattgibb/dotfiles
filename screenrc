@@ -1,0 +1,34 @@
+# nice status line
+hardstatus alwayslastline
+# hardstatus string "%{=b}%{G} Screen(s): %{b}%w %=%{G}%c  %D, %d %M, %Y "
+# hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+# hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m%{W}%c %{g}]'
+hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+
+# turn off startup message
+startup_message off
+
+# big scroll buffer
+defscrollback 20000
+
+# 3 second messages
+msgwait 3
+
+vbell_msg "[[[ding]]]"
+
+# detach on hangup
+autodetach on
+
+# move left/right with Shift-Left/Shift-Right
+bindkey ^[[d prev
+bindkey ^[[c next
+
+# Ctrl-t to open new screen
+bindkey ^T screen
+
+# Keeps finished processes alive
+# The two letters after it Finish the process or attempt to Restart it, respectively 
+# zombie fr
+
+# changes control character to '`' (backslash)
+escape ``

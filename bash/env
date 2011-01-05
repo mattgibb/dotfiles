@@ -1,0 +1,41 @@
+# bash searches PATH from left to right,
+# so directories listed first take priority
+# export PATH=/usr/local/sbin:/usr/local/mysql/bin:$PATH
+export PATH=/opt/local/apache2/bin:$PATH
+export PATH=/Applications/sshfs/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH # MacPorts binaries
+export PATH=$PATH:/usr/texbin # latex binaries for textmate
+export PATH=$PATH:/Users/matthewgibb/Code/android/android-sdk-mac_86/tools # Android SDK
+export PATH=/Users/matthewgibb/Code/visualisation/converters/build/bin:$PATH
+export PATH=$PATH:/sbin:/usr/sbin # amazon linux binaries
+export PATH=/usr/local/bin:$PATH
+
+# quickly cd to contents of favourite directories
+export CDPATH=.:~:~/code/ruby_and_rails
+
+# adds MacPorts manuals and info files
+export MANPATH=/opt/local/share/man:$MANPATH
+export INFOPATH=/opt/local/share/info:$INFOPATH
+
+# Make ls command use colours
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagacad
+
+# makes textmate the default text editor
+export EDITOR="mate -w"
+
+# keeps large command history and ignore boring entries
+# '&' in HISTIGNORE ignores duplicate entries
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000000
+export HISTIGNORE="&:ls:pwd:[bf]g:exit"
+
+# required for python to work with vtk
+# see ~/Documents/DPhil/programs/vtk/VTK/Wrapping/Python/README.txt
+export DYLD_LIBRARY_PATH=/Users/matthewgibb/Documents/DPhil/programs/vtk/VTKBin/lib/vtk-5.4
+
+# loads vox plugin
+export ITK_AUTOLOAD_PATH=/Users/matthewgibb/Code/visualisation/converters/build/lib
+
+# grep
+export GREP_OPTIONS='-I --color=auto'

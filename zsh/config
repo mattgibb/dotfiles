@@ -1,0 +1,36 @@
+HISTFILE=~/.zsh_history
+SAVEHIST=10000
+HISTSIZE=10000
+
+REPORTTIME=10 # show elapsed time if command took more than X seconds
+LISTMAX=0 # ask to complete if top of list would scroll off screen 
+
+# load completions for Ruby, Git, etc.
+autoload compinit
+compinit
+
+# load advanced prompt support
+# view available prompts with 'prompt -p'
+autoload -U promptinit
+promptinit
+
+# load colour prompts etc
+autoload -U colors
+colors
+
+# make CTRL-W delete after other chars, not just spaces
+WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
+
+bindkey -e
+
+# git branch and status functions
+function parse_git_dirty {
+  if [[ $(git status 2> /dev/null | tail -n1) == "nothing to commit (working directory clean)" ]]; then echo "%{$fg_bold[green]%}"; else echo "%{$fg_bold[red]%}"; fi
+}
+
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[$(parse_git_dirty)\1%{$reset_color%}]/"
+}
+
+setopt prompt_subst
+PROMPT='%n:%~%(?..[%?])$( parse_git_branch ) → '

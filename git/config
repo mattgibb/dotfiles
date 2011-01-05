@@ -1,0 +1,24 @@
+[user]
+	name = Matt Gibb
+	email = powermoveguru@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[merge]
+	summary = true
+[alias]
+	co = checkout
+	st = status
+	cm = commit
+	last = log -1 HEAD
+[apply]
+	whitespace = nowarn
+[core]
+	excludesfile = ~/.gitignore
+[github]
+	user = mattgibb
+	token = 4eb777752940333ef802ffb0595a737d
+[gc]
+	auto = 1

@@ -1,0 +1,7 @@
+[ui]
+username = Matt Gibb <powermoveguru@gmail.com>
+editor = mate -w
+ignore = ~/.hgignore
+
+[extensions]
+convert =
