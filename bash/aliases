@@ -42,7 +42,7 @@ alias helpme='open http://ss64.com/osx/'
 alias spec='spec --color'
 
 # change to registration directory and open up textmate
-alias itkstart='cd ~/Code/imaging/registration; open itk/itk_project.tmproj'
+alias itkstart='cd ~/Code/imaging/registration; mate .'
 
 alias r='rails'
 

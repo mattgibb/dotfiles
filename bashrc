@@ -1,6 +1,9 @@
-. ~/Dropbox/bin/dotfiles/bash/env
-. ~/Dropbox/bin/dotfiles/bash/config
-. ~/Dropbox/bin/dotfiles/bash/aliases
+. ~/.bash/env
+. ~/.bash/config
+. ~/.bash/aliases
+# . ~/.bash/completions
 
-# uncomment to use the Fink heirarchy
-# test -r /sw/bin/init.sh && . /sw/bin/init.sh
+# use .localrc for settings specific to one system
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
+fi
