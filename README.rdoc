@@ -1,0 +1,33 @@
+= Matt Gibb's Dot Files
+
+These are config files to set up a system the way I like it.
+
+If you've got any good config file banter and would like to share it
+with me, drop me an email, send me a patch or fork this and send me
+a pull request :-)
+
+== Installation
+
+If you have ruby installed:
+
+  git clone git://github.com/mattgibb/dotfiles ~/.dotfiles
+  cd ~/.dotfiles
+  rake install
+
+
+== Environment
+
+I am running on Mac OS X, but it will likely work on Linux as well with 
+minor fiddling. I primarily use zsh, but this includes some older bash 
+files as well. If you would like to switch to zsh, you can do so with 
+the following command.
+
+  chsh -s /bin/zsh
+
+
+== Features
+
+If you're using git, you'll notice the current branch name shows up in
+the prompt while in a git repository, in green for a clean status and
+in red otherwise.
+
