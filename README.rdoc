@@ -3,8 +3,8 @@
 These are config files to set up a system the way I like it.
 
 If you've got any good config file banter and would like to share it
-with me, drop me an email, send me a patch or fork this and send me
-a pull request :-)
+with me, I'd be delighted if you dropped me an email, sent me a patch
+or forked this and sent me a pull request :-)
 
 == Installation
 
