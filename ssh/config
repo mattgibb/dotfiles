@@ -39,7 +39,8 @@ Host dc
 # SUPERCOMPUTING
 # fastest cluster
 # User mgibb # Martin's account
-# User mattgibb # Blanca's account
+# User mattgibb # comp-card account
+# User gibb # Blanca's account
 Host sal
   Hostname sal.osc.ox.ac.uk
   User mattgibb

@@ -1,24 +1,6 @@
 # alias management aliases
 alias reload="source ~/.zshrc"
-alias ec="$EDITOR ~/Dropbox/bin/dotfiles && $EDITOR ~/Dropbox/bin/dotfiles/zsh/aliases && reload"
+alias ec="$EDITOR ~/Dropbox/bin/dotfiles && reload"
 
 # prints the top ten good candidates for aliasing
 alias most="history 1 | awk '{a[\$2]++}END{for(i in a){print a[i] \" \" i}}' | sort -rn | head"
-
-# toggles ruby version from 1.8 to 1.9
-chruby () {
-   v=`ruby -e "puts RUBY_VERSION.split('.')[0,2].join('.')"`
-   if [ $v = "1.9" ]; then 
-     cv="1.8"
-   else
-     cv="1.9"
-   fi
-   rubyexes=(erb gem irb rake rdoc ri ruby testrb)
-   for i in $rubyexes; do
-     sudo unlink "/opt/local/bin/${i}"
-     sudo ln -s "/opt/local/bin/${i}${cv}" "/opt/local/bin/${i}"
-   done
-   echo "Now Running: "`ruby -v`
- }
-
-alias make="make -j4"
