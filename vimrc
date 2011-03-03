@@ -79,6 +79,9 @@ map <leader>tm :tabmove
 "nnoremap ; :
 "nnoremap : ;
 
+" from Robbie
+nnoremap <silent> <F4> :set hlsearch! <bar> set hlsearch?<CR>
+
 "vnoremap ; :
 "vnoremap : ;
 
