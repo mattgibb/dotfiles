@@ -88,4 +88,5 @@ map <leader>tm :tabmove
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
-
+" Associate *.thor with ruby filetype
+au BufRead,BufNewFile *.thor set filetype=ruby
