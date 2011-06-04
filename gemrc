@@ -7,3 +7,4 @@
 :backtrace: false
 :benchmark: false
 :update_sources: true
+gem: --no-ri --no-rdoc
