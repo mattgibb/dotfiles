@@ -94,3 +94,7 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 " Associate *.thor with ruby filetype
 au BufRead,BufNewFile *.thor set filetype=ruby
+
+" Associate *.thor with ruby filetype
+au BufRead,BufNewFile *.txx set filetype=cpp
+
