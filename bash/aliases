@@ -10,7 +10,13 @@ alias gitx='gitx --all'
 alias ga='git add'
 
 function gd () {
+case $HOST in
+Lola-2.local)
   git diff $* | mate
+;;
+*)
+  git diff $* | vim -
+esac
 }
 
 function gdc () {
