@@ -8,6 +8,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gitx='gitx --all'
 alias ga='git add'
+alias gaa='git add --all'
 
 function gd () {
 case $HOST in
@@ -58,3 +59,6 @@ alias matlab='matlab -nosplash -nojvm'
 
 # starts vim in better mode i.e. not compatible with vi
 alias vim='vim -N'
+
+# stops R asking whether you want to save workspace image
+alias R='R --no-save'
