@@ -3,7 +3,7 @@ Host mg
   User matt
 
 Host work
-  HostName clpc404.comlab.ox.ac.uk
+  HostName clpc404.cs.ox.ac.uk
   User matg
 
 Host fred
@@ -21,11 +21,11 @@ Host phys
   User mgibb
 
 Host martin
-  Hostname clpc293.comlab.ox.ac.uk
+  Hostname clpc293.cs.ox.ac.uk
   User matg
 
 Host heart
-  Hostname heart.comlab.ox.ac.uk
+  Hostname heart.cs.ox.ac.uk
   User matg
 
 Host ecs
