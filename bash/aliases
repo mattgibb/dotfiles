@@ -11,8 +11,8 @@ alias ga='git add'
 alias gaa='git add --all'
 
 function gd () {
-case $HOST in
-Lola-2.local)
+case $EDITOR in
+"mate -w")
   git diff $* | mate
 ;;
 *)
