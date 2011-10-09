@@ -69,7 +69,7 @@ Host pproot
   
 # Amazon boxes
 Host cloud
-  Hostname promopush.dyndns.org
+  Hostname promopush.com
   User ec2-user
     
 Host cloud32
