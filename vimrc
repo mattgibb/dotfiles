@@ -75,9 +75,9 @@ map <leader>tm :tabmove
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
+" swap colon and semicolon for easier commands
+nnoremap ; :
+nnoremap : ;
 
 " from Robbie
 nnoremap <silent> <F4> :set hlsearch! <bar> set hlsearch?<CR>
