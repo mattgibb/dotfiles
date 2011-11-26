@@ -66,3 +66,8 @@ alias R='R --no-save'
 # bundle shortcuts
 alias b='bundle'
 alias be='bundle exec'
+
+# reminder not to use 'spec'
+function spec() {
+  echo "Don't use 'spec', use 'rspec'!"
+}
