@@ -72,3 +72,5 @@ alias be='bundle exec'
 function spec() {
   echo "Don't use 'spec', use 'rspec'!"
 }
+
+alias grin="grep -rin"
