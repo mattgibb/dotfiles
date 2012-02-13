@@ -74,3 +74,5 @@ function spec() {
 }
 
 alias grin="grep -rin"
+
+alias rh="rsync -azvPh"
