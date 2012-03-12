@@ -1,3 +1,6 @@
+# shell aliases
+alias la='ls -a' 
+
 # git aliases
 alias gst='git status'
 alias gl='git pull'
