@@ -1,7 +1,3 @@
-Host mg
-  HostName mattgibb.com
-  User matt
-
 Host work
   HostName clpc404.cs.ox.ac.uk
   User matg
@@ -32,10 +28,6 @@ Host ecs
   Hostname ecs.ox.ac.uk
   User matg
 
-Host dc
-  Hostname digital-crocus.com
-  User mattgibb
-  
 # SUPERCOMPUTING
 # fastest cluster
 # User mgibb # Martin's account
