@@ -50,9 +50,6 @@ alias up93='rsync -azPh --exclude ".DS_Store" --rsh="ssh -p3000" /Users/matthewg
 # great website for shell commands
 alias helpme='open http://ss64.com/osx/'
 
-# temporary add colour to spec until i find out how to configure it
-alias spec='spec --color'
-
 # change to registration directory and open up textmate
 alias itkstart='cd ~/Code/imaging/registration; mate .'
 
@@ -71,9 +68,6 @@ alias R='R --no-save'
 alias b='bundle'
 alias be='bundle exec'
 
-# reminder not to use 'spec'
-function spec() {
-  echo "Don't use 'spec', use 'rspec'!"
-}
-
 alias grin="grep -rin"
+
+alias rh="rsync -azvPh"
