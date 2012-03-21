@@ -1,3 +1,5 @@
+set nocompatible                  " Must come first because it changes other options.
+
 set hidden
 ":options shows all possible options
 ":set on its own shows all non-default options 
@@ -5,18 +7,28 @@ set hidden
 " TODO: watch smash into vim for extra plugins
 " TODO: rooter-vim on github searches up the directory tree for a .git directory, and sets that as the current directory
 
-
 " Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
-set nocompatible                  " Must come first because it changes other options.
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-silent! call pathogen#runtime_append_all_bundles()
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+
+" possibly useful plugins, all of these are github repos:
+" wincent/Command-T -- requires vim compiled with ruby
+" tpope/vim-rails -- rails helpers
+" tpope/vim-markdown -- syntax highlighting for markdown
+" garbas/vim-snipmate -- snippets
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+set clipboard=unnamed             " use system clipboard
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -48,14 +60,16 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
+set mouse=a                       " mouse enabled in terminal
+set cursorline
+
+
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
 set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
-" Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Or use vividchalk
 " colorscheme topfunky-light
@@ -70,24 +84,10 @@ map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
-
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+map <leader>tm :tabmove<cr>
 
 " swap colon and semicolon for easier commands
 nnoremap ; :
-nnoremap : ;
-
-" from Robbie
-nnoremap <silent> <F4> :set hlsearch! <bar> set hlsearch?<CR>
-
-"vnoremap ; :
-"vnoremap : ;
-
-" Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
@@ -98,3 +98,30 @@ au BufRead,BufNewFile *.thor set filetype=ruby
 " Associate *.thor with ruby filetype
 au BufRead,BufNewFile *.txx set filetype=cpp
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap ,n :NERDTreeToggle<CR>
+let NERDTreeWinSize = 30
+
+" single click to open directory or file
+let NERDTreeMouseMode = 3
+
+" automatically open NERDTree
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
+"""""""""""""""""""""""""""""""""""""""""""""""""""
