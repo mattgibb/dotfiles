@@ -58,9 +58,6 @@ alias r='rails'
 # runs command-line matlab
 alias matlab='matlab -nosplash -nojvm'
 
-# starts vim in better mode i.e. not compatible with vi
-alias vim='vim -N'
-
 # stops R asking whether you want to save workspace image
 alias R='R --no-save'
 
