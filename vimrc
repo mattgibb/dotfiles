@@ -1,4 +1,5 @@
 set nocompatible                  " Must come first because it changes other options.
+filetype off                      " required for vundle
 
 set hidden
 ":options shows all possible options
@@ -6,9 +7,6 @@ set hidden
 
 " TODO: watch smash into vim for extra plugins
 " TODO: rooter-vim on github searches up the directory tree for a .git directory, and sets that as the current directory
-
-" Example Vim configuration.
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -18,8 +16,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'wincent/Command-T'
 
 " possibly useful plugins, all of these are github repos:
+" tpope/vim-fugitive -- git vim integration
+" Lokaltog/vim-easymotion
+" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " wincent/Command-T -- requires vim compiled with ruby
 " tpope/vim-rails -- rails helpers
 " tpope/vim-markdown -- syntax highlighting for markdown
