@@ -39,3 +39,6 @@ export ITK_AUTOLOAD_PATH=/Users/matthewgibb/Code/visualisation/converters/build/
 
 # grep
 export GREP_OPTIONS='-I --color=auto'
+
+# node
+export NODE_PATH='/usr/local/lib/node_modules'
