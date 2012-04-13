@@ -1,0 +1,6 @@
+# get rid of default gdb transition alias
+command unalias b
+command alias b breakpoint
+
+# quick breakpoint setting
+command alias bfl breakpoint set -f %1 -l %2
