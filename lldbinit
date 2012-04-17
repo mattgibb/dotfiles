@@ -4,3 +4,7 @@ command alias b breakpoint
 
 # quick breakpoint setting
 command alias bfl breakpoint set -f %1 -l %2
+
+# stepping
+command alias v thread step-over
+command alias t thread step-out
