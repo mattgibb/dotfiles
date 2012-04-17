@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'wincent/Command-T'
+"Bundle 'mileszs/ack'
 
 " possibly useful plugins, all of these are github repos:
 " tpope/vim-fugitive -- git vim integration
@@ -73,9 +74,39 @@ set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
 
-" Or use vividchalk
 " colorscheme topfunky-light
 colorscheme vividchalk
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filetypes
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Associate *.thor with ruby filetype
+au BufRead,BufNewFile *.thor set filetype=ruby
+
+" Associate *.txx with C++ filetype
+au BufRead,BufNewFile *.txx set filetype=cpp
+
+" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
+" au BufRead,BufNewFile *_spec.rb compiler rspec
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" search tree with <Leader>t
+"nmap <silent> <Leader>t :CommandT<CR>
+
+" search buffers with <Leader>r
+"nmap <silent> <Leader>r :CommandTBuffer<CR>
+
+" Window mappings.
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -88,19 +119,29 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove<cr>
 
+" buffer next/prev
+nnoremap <leader>z :bp<CR>
+nnoremap <leader>x :bn<CR>
+
 " swap colon and semicolon for easier commands
 nnoremap ; :
 
-" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-autocmd BufNewFile,BufRead *_spec.rb compiler rspec
-
-" Associate *.thor with ruby filetype
-au BufRead,BufNewFile *.thor set filetype=ruby
-
-" Associate *.thor with ruby filetype
-au BufRead,BufNewFile *.txx set filetype=cpp
-
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else, do completion.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+                                
+                                
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""
