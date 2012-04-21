@@ -4,6 +4,7 @@ alias la='ls -a'
 # git aliases
 alias gst='git status'
 alias gl='git pull'
+alias glf='git pull --ff-only'
 alias gp='git push'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
@@ -13,6 +14,7 @@ alias gitx='gitx --all'
 alias ga='git add'
 alias gaa='git add --all'
 alias gsl='git stash list'
+
 
 function gd () {
 case $EDITOR in
