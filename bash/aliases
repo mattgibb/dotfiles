@@ -70,3 +70,5 @@ alias be='bundle exec'
 alias grin="grep -rin"
 
 alias rh="rsync -azvPh"
+
+alias calc='bc -l'
