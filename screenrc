@@ -32,3 +32,7 @@ bindkey ^T screen
 
 # changes control character to '`' (backslash)
 escape ``
+
+# required so that rvm works with screen
+# see https://rvm.io/workflow/screen/ for details
+shell -${SHELL}
