@@ -1,1 +1,5 @@
 exclude = "*.{backup,pyc} *~"
+
+# soft tabs default for all files
+[ *.* ]
+softTabs = true
