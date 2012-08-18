@@ -1,6 +1,8 @@
 exclude = "*.{backup,pyc} *~"
 
-# soft tabs default for all files
-[ *.* ]
 softTabs = true
 tabSize = 2
+
+# uncomment to apply properties to all files of a determined type
+# i.e. not new unnamed files
+# [ *.* ]
