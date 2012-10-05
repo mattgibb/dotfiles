@@ -19,7 +19,7 @@ autoload -U colors
 colors
 
 # make CTRL-W delete after other chars, not just spaces
-WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
+WORDCHARS=${WORDCHARS}\|
 
 bindkey -e
 
