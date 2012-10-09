@@ -21,6 +21,9 @@ colors
 # make CTRL-W delete after other chars, not just spaces
 WORDCHARS=${WORDCHARS}\|
 
+# stop forward slashes being wordchars
+WORDCHARS=${WORDCHARS/\/}
+
 bindkey -e
 
 # git branch and status functions
