@@ -128,6 +128,19 @@ nnoremap <leader>x :bn<CR>
 
 " swap colon and semicolon for easier commands
 nnoremap ; :
+vnoremap ; :
+
+" show/hide invisibles
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+
+nmap <leader>w :set wrap!<CR>
+"If your '{' or '}' are not in the first column, and you would like to use
+"'[[' and ']]' anyway, try these mappings: >
+map [[ ?{<CR>w99[{
+map ][ /}<CR>b99]}
+map ]] j0[[%/{<CR>
+map [] k$][%?}<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
