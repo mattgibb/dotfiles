@@ -69,7 +69,8 @@ set cursorline
 
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
+set softtabstop=2                " Global soft tab width.
+set shiftwidth=2                 " Indent and dedent increments
 set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
@@ -91,6 +92,8 @@ au BufRead,BufNewFile *.txx set filetype=cpp
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 " au BufRead,BufNewFile *_spec.rb compiler rspec
 
+" Set filetype-specific whitespace
+au FileType python setlocal ts=4 sts=4 sw=4 expandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
