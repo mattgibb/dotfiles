@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/matthewgibb/code'
-let g:netrw_dirhist_2='/Users/matthewgibb/code/imaging'
-let g:netrw_dirhist_3='/Users/matthewgibb/code/imaging/registration/image_processing'
-let g:netrw_dirhist_4='/Users/matthewgibb/code/imaging/registration/image_processing/bin'
-let g:netrw_dirhist_5='/Users/matthewgibb/code/imaging/registration/itk_build'
-let g:netrw_dirhist_6='/Users/matthewgibb/Desktop'
