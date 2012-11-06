@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'wincent/Command-T'
+Bundle 'bbommarito/vim-slim'
 "Bundle 'mileszs/ack'
 
 " possibly useful plugins, all of these are github repos:
@@ -31,7 +32,7 @@ Bundle 'wincent/Command-T'
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-set clipboard=unnamed             " use system clipboard
+" set clipboard=unnamed             " use system clipboard
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -65,7 +66,6 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 set mouse=a                       " mouse enabled in terminal
 set cursorline
-
 
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
