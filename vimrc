@@ -183,4 +183,36 @@ function! s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
+" Fuzzy search through directory trees
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" search tree
+map <leader>t :CtrlP<cr>
+
+" search buffers
+map <leader>r :CtrlPBuffer<cr>
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" Ack
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" nnoremap <leader>a :Ack -i 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" Colors
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" if(&t_Co==256)
+  "let g:solarized_termcolors=16
+  " color solarized
+  " endif
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" tpope/fugitive
+""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>gs :Gstatus<cr>
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
