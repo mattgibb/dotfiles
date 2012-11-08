@@ -18,6 +18,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'wincent/Command-T'
 Bundle 'bbommarito/vim-slim'
+Bundle 'kchmck/vim-coffee-script'
 "Bundle 'mileszs/ack'
 
 " possibly useful plugins, all of these are github repos:
@@ -173,16 +174,16 @@ let NERDTreeMouseMode = 3
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
+" autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" function! s:CloseIfOnlyNerdTreeLeft()
+"   if exists("t:NERDTreeBufName")
+"     if bufwinnr(t:NERDTreeBufName) != -1
+"       if winnr("$") == 1
+"         q
+"       endif
+"     endif
+"   endif
+" endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Fuzzy search through directory trees
