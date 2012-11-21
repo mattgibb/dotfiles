@@ -1,5 +1,8 @@
 # Change command prompt
 PS1="\n\u:\w \n→ "
 
+# use ctrl-s to search forward
+stty stop ''
+
 # ruby version manager
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
