@@ -8,6 +8,7 @@ export PATH=$PATH:/usr/texbin # latex binaries for textmate
 export PATH=$PATH:/Users/matthewgibb/Code/android/android-sdk-mac_86/tools # Android SDK
 export PATH=/Users/matthewgibb/Code/visualisation/converters/build/bin:$PATH
 export PATH=$PATH:/sbin:/usr/sbin # amazon linux binaries
+export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 # quickly cd to contents of favourite directories
