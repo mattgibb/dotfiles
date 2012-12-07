@@ -37,3 +37,7 @@ function parse_git_branch {
 
 setopt prompt_subst
 PROMPT='%n:%~%(?..[%?])$( parse_git_branch ) → '
+
+# update history with every command
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
