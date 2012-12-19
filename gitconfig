@@ -26,3 +26,5 @@
 	auto = 1
 [merge]
   tool = vimdiff
+[push]
+	default = upstream
