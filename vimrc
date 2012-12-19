@@ -19,13 +19,14 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'wincent/Command-T'
 Bundle 'bbommarito/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
-"Bundle 'mileszs/ack'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-commentary'
+Bundle 'mileszs/ack.vim'
+
 
 " possibly useful plugins, all of these are github repos:
-" tpope/vim-fugitive -- git vim integration
 " Lokaltog/vim-easymotion
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" wincent/Command-T -- requires vim compiled with ruby
 " tpope/vim-rails -- rails helpers
 " tpope/vim-markdown -- syntax highlighting for markdown
 " garbas/vim-snipmate -- snippets
