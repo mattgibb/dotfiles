@@ -76,7 +76,7 @@ set shiftwidth=2                 " Indent and dedent increments
 set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
-set statusline=%{fugitive#statusline()} " Show current branch in status line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " Show current branch in status line
 
 " colorscheme topfunky-light
 colorscheme vividchalk
