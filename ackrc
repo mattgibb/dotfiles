@@ -1,2 +1,4 @@
 --type-set=coffee=.coffee
+--type-set=cucumber=.feature
 --ignore-dir=node_modules
+--ignore-dir=.meteor
