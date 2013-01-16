@@ -20,11 +20,11 @@ alias tf='tail -f -n0'
 
 function gd () {
 case $EDITOR in
-"mate -w")
-  git diff $* | mate
+"vim")
+  git diff $* | view -
 ;;
 *)
-  git diff $* | vim -
+  git diff $* | $EDITOR
 esac
 }
 
