@@ -22,6 +22,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
 Bundle 'mileszs/ack.vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 
 " possibly useful plugins, all of these are github repos:
