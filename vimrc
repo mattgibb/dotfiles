@@ -23,7 +23,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
-
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
 
 " possibly useful plugins, all of these are github repos:
 " Lokaltog/vim-easymotion
