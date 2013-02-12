@@ -39,7 +39,7 @@ export DYLD_LIBRARY_PATH=/Users/matthewgibb/Documents/DPhil/programs/vtk/VTKBin/
 export ITK_AUTOLOAD_PATH=/Users/matthewgibb/Code/visualisation/converters/build/lib
 
 # grep
-export GREP_OPTIONS="-rI --exclude-dir='.[a-zA-Z0-9]*' --exclude='.*' --exclude='*~' --color=auto"
+export GREP_OPTIONS="-I --exclude-dir='.[a-zA-Z0-9]*' --exclude='.*' --exclude='*~' --color=auto"
 
 # node
 export NODE_PATH='/usr/local/lib/node_modules'
