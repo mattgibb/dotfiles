@@ -23,7 +23,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacad
 
 # makes textmate the default text editor
-export EDITOR="mate -w"
+export EDITOR="vim"
 
 # keeps large command history and ignore boring entries
 # '&' in HISTIGNORE ignores duplicate entries
