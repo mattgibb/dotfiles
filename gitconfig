@@ -1,27 +1,27 @@
 [user]
-	name = Matt Gibb
-	email = matt@mattgibb.com
+  name = Matt Gibb
+  email = matt@mattgibb.com
 [color]
   ui = auto
   diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+  status = auto
+  branch = auto
+  interactive = auto
 [merge]
-	summary = true
+  summary = true
 [alias]
-	co = checkout
-	st = status
-	cm = commit
-	last = log -1 HEAD
+  co = checkout
+  st = status
+  cm = commit
+  last = log -1 HEAD
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
 [gc]
-	auto = 1
+  auto = 1
 [merge]
   tool = vimdiff
 [push]
-	default = upstream
+  default = upstream
