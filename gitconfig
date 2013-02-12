@@ -19,9 +19,6 @@
 [core]
 	excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
-[github]
-	user = mattgibb
-	token = 4eb777752940333ef802ffb0595a737d
 [gc]
 	auto = 1
 [merge]
