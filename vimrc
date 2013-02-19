@@ -26,6 +26,11 @@ Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+
+" necessary for nelstrom/vim-textobj-rubyblock
+runtime macros/matchit.vim
 
 " possibly useful plugins, all of these are github repos:
 " Lokaltog/vim-easymotion
