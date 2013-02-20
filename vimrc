@@ -28,6 +28,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'altercation/vim-colors-solarized'
 
 " necessary for nelstrom/vim-textobj-rubyblock
 runtime macros/matchit.vim
@@ -87,7 +88,9 @@ set laststatus=2                  " Show the status line all the time
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " Show current branch in status line
 
 " colorscheme topfunky-light
-colorscheme vividchalk
+" colorscheme vividchalk
+set background=dark
+colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""

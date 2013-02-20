@@ -43,3 +43,6 @@ export GREP_OPTIONS="-I --exclude-dir='.[a-zA-Z0-9]*' --exclude='.*' --exclude='
 
 # node
 export NODE_PATH='/usr/local/lib/node_modules'
+
+# 256 colors for solarised theme
+export TERM='screen-256color'
