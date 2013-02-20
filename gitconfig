@@ -14,6 +14,7 @@
   st = status
   cm = commit
   last = log -1 HEAD
+  ctags = !.git/hooks/ctags
 [apply]
   whitespace = nowarn
 [core]
@@ -25,3 +26,5 @@
   tool = vimdiff
 [push]
   default = upstream
+[init]
+	templatedir = ~/.git_template
