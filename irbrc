@@ -16,4 +16,9 @@ if ENV['RAILS_ENV']
 end 
 
 # remembers command history
-IRB.conf[:SAVE_HISTORY] = 50
+IRB.conf[:SAVE_HISTORY] = 500
+
+# ActiveRecord sql helper
+def sql(query)
+    ActiveRecord::Base.connection.select_rows(query)
+end
