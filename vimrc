@@ -160,6 +160,10 @@ map [] k$][%?}<CR>
 
 vnoremap . :norm.<CR>
 
+" ctags
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
@@ -232,5 +236,4 @@ map <leader>r :CtrlPBuffer<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>gs :Gstatus<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""
-
 
