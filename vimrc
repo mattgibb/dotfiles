@@ -22,6 +22,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-rails'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
@@ -29,6 +30,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'benmills/vimux'
+Bundle 'jgdavey/vim-turbux'
 
 " necessary for nelstrom/vim-textobj-rubyblock
 runtime macros/matchit.vim
@@ -36,7 +39,6 @@ runtime macros/matchit.vim
 " possibly useful plugins, all of these are github repos:
 " Lokaltog/vim-easymotion
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" tpope/vim-rails -- rails helpers
 " tpope/vim-markdown -- syntax highlighting for markdown
 " garbas/vim-snipmate -- snippets
 
