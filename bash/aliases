@@ -14,19 +14,10 @@ alias gitx='gitx --all'
 alias ga='git add'
 alias gaa='git add --all'
 alias gsl='git stash list'
+alias gd='git diff'
 
 # log aliases
 alias tf='tail -f -n0'
-
-function gd () {
-case $EDITOR in
-"vim")
-  git diff $* | view -
-;;
-*)
-  git diff $* | $EDITOR
-esac
-}
 
 function gdc () {
   gd --cached $*
