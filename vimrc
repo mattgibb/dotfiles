@@ -32,8 +32,8 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neosnippet'
+" Bundle 'Shougo/neocomplcache'
+" Bundle 'Shougo/neosnippet'
 
 " necessary for nelstrom/vim-textobj-rubyblock
 runtime macros/matchit.vim
@@ -170,17 +170,17 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" function! InsertTabWrapper()
-"     let col = col('.') - 1
-"     if !col || getline('.')[col - 1] !~ '\k'
-"         return "\<tab>"
-"     else
-"         return "\<c-p>"
-"     endif
-" endfunction
-" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-" inoremap <s-tab> <c-n>
-source ~/.vim/config/neocomplcache.vim
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+" source ~/.vim/config/neocomplcache.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
