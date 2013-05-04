@@ -34,6 +34,7 @@ Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
 " Bundle 'Shougo/neocomplcache'
 " Bundle 'Shougo/neosnippet'
+Bundle 'guns/vim-clojure-static'
 
 " necessary for nelstrom/vim-textobj-rubyblock
 runtime macros/matchit.vim
