@@ -188,6 +188,7 @@ inoremap <s-tab> <c-n>
 """""""""""""""""""""""""""""""""""""""""""""""""""
 nmap ,n :NERDTreeToggle<CR>
 let NERDTreeWinSize = 30
+let NERDTreeIgnore = ['\.pyc$']
 
 " single click to open directory or file
 let NERDTreeMouseMode = 3
