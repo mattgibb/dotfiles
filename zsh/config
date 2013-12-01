@@ -28,7 +28,7 @@ bindkey -e
 
 # git branch and status functions
 function parse_git_dirty {
-  if [[ $(git status 2> /dev/null | tail -n1) == "nothing to commit (working directory clean)" ]]; then echo "%{$fg_bold[green]%}"; else echo "%{$fg_bold[red]%}"; fi
+  if [[ $(git status 2> /dev/null | tail -n1) == "nothing to commit, working directory clean" ]]; then echo "%{$fg_bold[green]%}"; else echo "%{$fg_bold[red]%}"; fi
 }
 
 function parse_git_branch {
