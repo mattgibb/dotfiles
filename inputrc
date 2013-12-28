@@ -1,7 +1,7 @@
-"\e[A": history-search-backward
-"\e[B": history-search-forward
-"\e[C": forward-char
-"\e[D": backward-char
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward
+# "\e[C": forward-char
+# "\e[D": backward-char
 
 # If set to on, words which have more than one possible completion without
 # any possible partial completion cause the matches to be listed immediately
