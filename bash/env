@@ -10,6 +10,8 @@ export PATH=/Users/matthewgibb/Code/visualisation/converters/build/bin:$PATH
 export PATH=$PATH:/sbin:/usr/sbin # amazon linux binaries
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:$PATH
 
 # quickly cd to contents of favourite directories
 # export CDPATH=.:~:~/code/ruby_and_rails
@@ -33,7 +35,7 @@ export HISTIGNORE="&:ls:pwd:[bf]g:exit"
 
 # required for python to work with vtk
 # see ~/Documents/DPhil/programs/vtk/VTK/Wrapping/Python/README.txt
-export DYLD_LIBRARY_PATH=/Users/matthewgibb/Documents/DPhil/programs/vtk/VTKBin/lib/vtk-5.4
+# export DYLD_LIBRARY_PATH=/Users/matthewgibb/Documents/DPhil/programs/vtk/VTKBin/lib/vtk-5.4
 
 # loads vox plugin
 export ITK_AUTOLOAD_PATH=/Users/matthewgibb/Code/visualisation/converters/build/lib
