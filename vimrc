@@ -36,6 +36,12 @@ Bundle 'jgdavey/vim-turbux'
 " Bundle 'Shougo/neosnippet'
 Bundle 'guns/vim-clojure-static'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-fireplace'
+Bundle 'guns/vim-slamhound'
+Bundle 'tpope/vim-endwise'
+Bundle 'Raimondi/delimitMate'
 
 " necessary for nelstrom/vim-textobj-rubyblock
 runtime macros/matchit.vim
@@ -98,6 +104,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " Show 
 set background=dark
 colorscheme solarized
 
+" Auto read when a file is changed on disk
+set autoread
+au CursorHold * checktime
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetypes
@@ -219,6 +228,8 @@ map <leader>t :CtrlP<cr>
 
 " search buffers
 map <leader>r :CtrlPBuffer<cr>
+
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn))|(bower_components|node_modules)$'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 
