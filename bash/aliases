@@ -65,3 +65,14 @@ alias grin="grep -rin"
 alias rh="rsync -azvPh"
 
 alias calc='bc -l'
+
+# webrtc debugging
+alias debugchrome="CHROME_LOG_FILE=debugchrome.log /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-logging --v=1 --vmodule='*libjingle/source/talk/*=3'"
+
+# heroku
+alias h='heroku'
+
+# Etymology of Chinese/Kanji characters from the command line
+define () {
+  open http://en.wiktionary.org/wiki/$1
+}
