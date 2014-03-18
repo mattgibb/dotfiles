@@ -1,2 +1,2 @@
 export rvm_pretty_print_flag=1
-rvm_make_flags="-j 8"
+rvm_make_flags="-j8"
