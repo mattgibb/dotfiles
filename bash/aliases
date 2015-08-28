@@ -15,6 +15,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gsl='git stash list'
 alias gd='git diff'
+alias glo='git log --graph --oneline --abbrev --decorate'
 
 # log aliases
 alias tf='tail -f -n0'
