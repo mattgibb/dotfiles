@@ -15,18 +15,47 @@
   cm = commit
   last = log -1 HEAD
   ctags = !.git/hooks/ctags
-  tree = log --graph --oneline --decorate --all
-  tree2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'
+  tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset %C(bold blue)(%cn, %cr)%Creset'
+  subtree = log --graph --oneline --decorate --left-right --boundary
+  unstage = reset HEAD --
 [apply]
   whitespace = nowarn
 [core]
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
+  abbrev = 4
 [gc]
   auto = 1
 [merge]
+  conflictStyle = diff3
   tool = vimdiff
 [push]
-  default = upstream
+  default = current
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
+[rebase]
+  stat = true
+  missingCommitsCheck = warn
+  autoSquash = true
+[stash]
+  showStat = true
+  showPatch = true
+[rerere]
+  enabled = true
+[commit]
+  verbose = true
+[branch]
+  autoSetupRebase = remote
+[pull]
+  rebase = interactive
+[diff]
+  tool = vimdiff
+[fetch]
+  prune = true
+[interactive]
+  singleKey = true
+[status]
+  showStash = true
+  branch = true
+[log]
+  follow = true
