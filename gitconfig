@@ -15,7 +15,8 @@
   cm = commit
   last = log -1 HEAD
   ctags = !.git/hooks/ctags
-  tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset %C(bold blue)(%cn, %cr)%Creset'
+  tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %ad)%Creset %C(bold blue)(%cn, %cd)%Creset'
+  tree-human = tree --date=human
   subtree = log --graph --oneline --decorate --left-right --boundary
   unstage = reset HEAD --
 [apply]
